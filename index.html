@@ -33,43 +33,59 @@
 
 <section id="tr" lang="tr">
 <h1>Araba Sarrafı – Gizlilik Politikası</h1>
-<p class="meta">Geliştirici: HBB Code · Paket adı: com.hbbcode.arabasarrafi · Son güncelleme: 27 Eylül 2026</p>
+<p class="meta">Geliştirici: HBB Code · Paket adı / Bundle ID: com.hbbcode.arabasarrafi · Son güncelleme: 24 Ekim 2026</p>
 
-<p>Bu politika, Android için geliştirilen <strong>Araba Sarrafı</strong> oyununun (“Uygulama”) hangi verileri nasıl işlediğini açıklar. Uygulama bir hesap oluşturmanızı istemez; adınız, e-posta adresiniz, telefon numaranız, konumunuz, rehberiniz, fotoğraflarınız veya mikrofonunuz gibi kişisel bilgilere erişmez.</p>
+<p>Bu politika, Android ve iPhone için geliştirilen <strong>Araba Sarrafı</strong> oyununun (“Uygulama”) hangi verileri nasıl işlediğini açıklar. Uygulama bir hesap oluşturmanızı istemez; adınız, e-posta adresiniz, telefon numaranız, kesin konumunuz, rehberiniz, fotoğraflarınız veya mikrofonunuz gibi kişisel bilgilere erişmez. Oyunda sohbet, kullanıcı adı veya oyuncuların birbirine mesaj göndermesi yoktur.</p>
 
 <h2>1. Yalnızca cihazınızda tutulan veriler</h2>
-<p>Oyundaki <strong>puanınız ve krediniz</strong> yalnızca telefonunuzda saklanır. Bu bilgiler bize veya başka bir sunucuya gönderilmez. Uygulamayı kaldırdığınızda veya uygulama verilerini temizlediğinizde silinir.</p>
+<p>Oyundaki <strong>puanınız, krediniz ve reklam ödülü sayacınız</strong> yalnızca telefonunuzda saklanır; bize veya başka bir sunucuya gönderilmez. Uygulamayı kaldırdığınızda veya uygulama verilerini temizlediğinizde silinir.</p>
 
-<h2>2. Reklamlar (Google AdMob)</h2>
-<p>Uygulama, kredisi biten oyunculara isteğe bağlı <strong>ödüllü reklam</strong> göstermek için Google AdMob’u kullanır. Reklam gösterebilmek için Google, cihazınızdan şu bilgileri toplayabilir:</p>
+<h2>2. Online düello (Google Firebase)</h2>
+<p>Düello modunu açtığınızda, Uygulama Google Firebase üzerinden size rastgele bir <strong>misafir kimliği</strong> (anonim kullanıcı kimliği) oluşturur. Bu kimlik adınıza, e-postanıza veya telefon numaranıza bağlı değildir; yalnızca maçta hangi cevabın hangi oyuncuya ait olduğunu ayırt etmek için kullanılır. Düello sırasında Firebase Realtime Database’de (sunucu konumu: Belçika) şunlar tutulur:</p>
 <ul>
-  <li>Reklam kimliği (Android Advertising ID)</li>
+  <li>Oda kodu ve odadaki iki oyuncunun misafir kimlikleri</li>
+  <li>Maçın soruları (araba ve şıklar) ile her turda verdiğiniz cevap ve cevap zamanı</li>
+  <li>Rastgele rakip ararken eşleşme sırasındaki misafir kimliğiniz</li>
+  <li>Bağlantınızın kopup kopmadığı bilgisi</li>
+</ul>
+<p>Maç bittiğinde oda kısa süre içinde silinir; eşleşme sırasındaki kaydınız rakip bulununca veya aramayı bıraktığınızda silinir. Firebase, hizmeti sunmak için IP adresinizi ve cihaz bilgilerinizi işleyebilir. Ayrıntılar: <a href="https://firebase.google.com/support/privacy">Firebase gizlilik ve güvenlik</a>.</p>
+<p>Düelloya arkadaşınızı davet ettiğinizde paylaşım mesajını siz seçtiğiniz uygulamayla (ör. WhatsApp) gönderirsiniz; mesajda yalnızca oda kodu ve mağaza bağlantıları bulunur.</p>
+
+<h2>3. Araba fotoğrafları ve araba listesi</h2>
+<p>Bazı araba fotoğrafları uygulamanın içinde gelir; diğerleri ve güncel araba listesi internetten (Cloudflare sunucularından) indirilip telefonunuzda saklanır. Bu indirme sırasında, her internet isteğinde olduğu gibi IP adresiniz ve cihaz bilgileriniz sunucu tarafından teknik olarak işlenebilir; bu bilgileri sizi tanımak veya reklam için kullanmayız.</p>
+<p>Fotoğraflar ticari kullanıma izin veren lisanslarla (Pexels lisansı; Wikimedia Commons’ta CC0, kamu malı, CC BY ve CC BY-SA) kullanılır. Fotoğrafçının adı ve lisans her görselin köşesinde, tam kaynak listesi uygulamadaki <em>Fotoğraf kaynakları</em> sayfasında yer alır.</p>
+
+<h2>4. Bildirimler</h2>
+<p>Reklam ödülü merdiveni yenilendiğinde size hatırlatma göstermek için, izin verirseniz telefonunuzda <strong>yerel bildirim</strong> kurulur. Bu bildirim tamamen telefonunuzda oluşturulur; bunun için hiçbir veri gönderilmez. İzni telefon ayarlarından dilediğiniz zaman kapatabilirsiniz.</p>
+
+<h2>5. Reklamlar (Google AdMob)</h2>
+<p>Uygulama, kredisi azalan oyunculara isteğe bağlı <strong>ödüllü reklam</strong> göstermek için Google AdMob’u kullanır. Reklam yalnızca siz “Reklam izle”ye bastığınızda gösterilir. Reklam gösterebilmek için Google, cihazınızdan şu bilgileri toplayabilir:</p>
+<ul>
+  <li>Reklam kimliği (Android Advertising ID veya iPhone’da IDFA)</li>
   <li>IP adresi ve buna dayalı yaklaşık konum (ülke/şehir düzeyi)</li>
   <li>Cihaz ve uygulama bilgileri (model, işletim sistemi sürümü, dil, uygulama sürümü)</li>
   <li>Reklam etkileşimleri ve teşhis/çökme verileri</li>
 </ul>
 <p>Bu veriler Google tarafından reklam gösterimi, ölçüm, sahtecilik önleme ve analiz amacıyla işlenir; aktarım sırasında şifrelenir. Ayrıntılar: <a href="https://policies.google.com/technologies/partner-sites?hl=tr">Google’ın iş ortaklarının sitelerini veya uygulamalarını kullandığınızda verilerinizi nasıl kullandığı</a> ve <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>.</p>
-<p>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’deki kullanıcılardan, kişiselleştirilmiş reklam için Google’ın onay formu aracılığıyla izin istenir. Reklam kimliğinizi dilediğiniz zaman <em>Ayarlar → Gizlilik → Reklamlar</em> bölümünden sıfırlayabilir veya silebilirsiniz.</p>
+<p>iPhone’da reklam kimliği yalnızca Apple’ın “Uygulama İzleme Şeffaflığı” penceresinde izin verirseniz kullanılır. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’deki kullanıcılardan kişiselleştirilmiş reklam için Google’ın onay formu aracılığıyla izin istenir. Reklam kimliğinizi dilediğiniz zaman telefonunuzun gizlilik ayarlarından sıfırlayabilir veya silebilirsiniz.</p>
 
-<h2>3. Veri satışı ve paylaşımı</h2>
-<p>Verilerinizi satmayız. Yukarıda anlatılan Google AdMob dışında hiçbir üçüncü tarafla veri paylaşmayız.</p>
+<h2>6. Veri satışı ve paylaşımı</h2>
+<p>Verilerinizi satmayız. Yukarıda anlatılan hizmet sağlayıcılar (Google AdMob, Google Firebase, Cloudflare) dışında hiçbir üçüncü tarafla veri paylaşmayız.</p>
 
-<h2>4. Fotoğraflar</h2>
-<p>Oyundaki araba fotoğrafları ticari kullanıma izin veren Pexels lisansı altındadır ve uygulamanın içinde gelir. Fotoğrafçıların adları görsellerin köşesinde belirtilir. Oyun sırasında fotoğraf indirmek için internete bağlanılmaz.</p>
-
-<h2>5. Çocuklar</h2>
+<h2>7. Çocuklar</h2>
 <p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve bu yaştaki çocuklardan bilerek veri toplamaz.</p>
 
-<h2>6. Verilerinizin silinmesi</h2>
+<h2>8. Verilerinizin silinmesi</h2>
 <ul>
-  <li>Oyun verileri: Uygulamayı kaldırın veya <em>Ayarlar → Uygulamalar → Araba Sarrafı → Depolama → Verileri temizle</em>.</li>
+  <li>Oyun verileri ve misafir kimliği: Uygulamayı kaldırın veya uygulama verilerini temizleyin. Yeni kurulumda yeni bir misafir kimliği oluşturulur.</li>
+  <li>Düello verileri maç bitince otomatik silinir. Misafir kimliğinizin sunucudan da silinmesini isterseniz <a href="mailto:hbbyazilim@gmail.com">hbbyazilim@gmail.com</a> adresine yazabilirsiniz.</li>
   <li>Reklam verileri: Reklam kimliğinizi sıfırlayın veya silin. Google’ın tuttuğu veriler için <a href="https://myaccount.google.com/data-and-privacy">Google hesabı veri ve gizlilik</a> sayfasını kullanabilirsiniz.</li>
 </ul>
 
-<h2>7. Değişiklikler</h2>
-<p>Uygulamaya yeni özellikler eklendiğinde (ör. çevrimiçi düello veya uygulama içi satın alma) bu politika güncellenir ve güncelleme tarihi yukarıda belirtilir.</p>
+<h2>9. Değişiklikler</h2>
+<p>Uygulamaya yeni özellikler eklendiğinde (ör. hesapla giriş veya uygulama içi satın alma) bu politika güncellenir ve güncelleme tarihi yukarıda belirtilir.</p>
 
-<h2>8. İletişim</h2>
+<h2>10. İletişim</h2>
 <p>Sorularınız ve veri talepleriniz için: <a href="mailto:hbbyazilim@gmail.com">hbbyazilim@gmail.com</a> (HBB Code)</p>
 </section>
 
@@ -77,43 +93,59 @@
 
 <section id="en" lang="en">
 <h1>Araba Sarrafı – Privacy Policy</h1>
-<p class="meta">Developer: HBB Code · Package: com.hbbcode.arabasarrafi · Last updated: September 27, 2026</p>
+<p class="meta">Developer: HBB Code · Package / Bundle ID: com.hbbcode.arabasarrafi · Last updated: October 24, 2026</p>
 
-<p>This policy explains how the Android game <strong>Araba Sarrafı</strong> (“the App”) handles data. The App does not require an account and does not access personal information such as your name, email, phone number, location, contacts, photos or microphone.</p>
+<p>This policy explains how the Android and iPhone game <strong>Araba Sarrafı</strong> (“the App”) handles data. The App does not require an account and does not access personal information such as your name, email, phone number, precise location, contacts, photos or microphone. There is no chat, no usernames and no messaging between players.</p>
 
 <h2>1. Data stored only on your device</h2>
-<p>Your in-game <strong>score and credits</strong> are stored only on your phone. They are never sent to us or any server, and they are deleted when you uninstall the App or clear its data.</p>
+<p>Your <strong>score, credits and ad reward counter</strong> are stored only on your phone. They are never sent to us or any server, and they are deleted when you uninstall the App or clear its data.</p>
 
-<h2>2. Advertising (Google AdMob)</h2>
-<p>The App uses Google AdMob to show optional <strong>rewarded ads</strong> to players who run out of credits. To serve ads, Google may collect:</p>
+<h2>2. Online duels (Google Firebase)</h2>
+<p>When you open the duel mode, the App creates a random <strong>guest ID</strong> (anonymous user ID) through Google Firebase. It is not linked to your name, email or phone number; it is only used to tell which answer belongs to which player in a match. During a duel, Firebase Realtime Database (server location: Belgium) stores:</p>
 <ul>
-  <li>Advertising ID</li>
+  <li>The room code and the guest IDs of the two players</li>
+  <li>The match questions (car and options) and your answer and answer time in each round</li>
+  <li>Your guest ID while you are in the queue for a random opponent</li>
+  <li>Whether your connection dropped</li>
+</ul>
+<p>The room is deleted shortly after the match ends; your queue entry is deleted when an opponent is found or you stop searching. Firebase may process your IP address and device information to provide the service. See <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
+<p>When you invite a friend, you send the invitation yourself with an app of your choice (e.g. WhatsApp); it only contains the room code and store links.</p>
+
+<h2>3. Car photos and car list</h2>
+<p>Some car photos are bundled with the App; others and the current car list are downloaded from Cloudflare servers and stored on your phone. As with any internet request, your IP address and device information may be technically processed by the server; we do not use them to identify you or for advertising.</p>
+<p>Photos are used under licenses that permit commercial use (Pexels license; CC0, public domain, CC BY and CC BY-SA on Wikimedia Commons). The photographer and license are shown in the corner of each image, and the full source list is on the in-app <em>Photo credits</em> page.</p>
+
+<h2>4. Notifications</h2>
+<p>If you allow it, the App schedules a <strong>local notification</strong> on your phone to remind you when the ad reward ladder resets. It is created entirely on your phone; no data is sent for it. You can turn it off in your phone settings at any time.</p>
+
+<h2>5. Advertising (Google AdMob)</h2>
+<p>The App uses Google AdMob to show optional <strong>rewarded ads</strong>, only when you tap “Watch ad”. To serve ads, Google may collect:</p>
+<ul>
+  <li>Advertising ID (Android Advertising ID or IDFA on iPhone)</li>
   <li>IP address and approximate location derived from it (country/city level)</li>
   <li>Device and app information (model, OS version, language, app version)</li>
   <li>Ad interactions and diagnostic/crash data</li>
 </ul>
 <p>Google processes this data for ad delivery, measurement, fraud prevention and analytics; it is encrypted in transit. See <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
-<p>Users in the EEA, UK and Switzerland are asked for consent to personalized ads through Google’s consent form. You can reset or delete your advertising ID at any time in <em>Settings → Privacy → Ads</em>.</p>
+<p>On iPhone, the advertising ID is used only if you allow it in Apple’s App Tracking Transparency prompt. Users in the EEA, UK and Switzerland are asked for consent to personalized ads through Google’s consent form. You can reset or delete your advertising ID at any time in your phone’s privacy settings.</p>
 
-<h2>3. Selling and sharing</h2>
-<p>We do not sell your data. We do not share data with any third party other than Google AdMob as described above.</p>
+<h2>6. Selling and sharing</h2>
+<p>We do not sell your data. We do not share data with any third party other than the service providers described above (Google AdMob, Google Firebase, Cloudflare).</p>
 
-<h2>4. Photos</h2>
-<p>Car photos are licensed under the Pexels license, which permits commercial use, and are bundled with the App. Photographers are credited in the corner of each image. The App does not download photos during play.</p>
-
-<h2>5. Children</h2>
+<h2>7. Children</h2>
 <p>The App is not directed at children under 13 and does not knowingly collect data from them.</p>
 
-<h2>6. Deleting your data</h2>
+<h2>8. Deleting your data</h2>
 <ul>
-  <li>Game data: uninstall the App or use <em>Settings → Apps → Araba Sarrafı → Storage → Clear data</em>.</li>
+  <li>Game data and guest ID: uninstall the App or clear its data. A new guest ID is created after reinstalling.</li>
+  <li>Duel data is deleted automatically after each match. To have your guest ID deleted from the server as well, email <a href="mailto:hbbyazilim@gmail.com">hbbyazilim@gmail.com</a>.</li>
   <li>Ad data: reset or delete your advertising ID. For data held by Google, use <a href="https://myaccount.google.com/data-and-privacy">Google Account data &amp; privacy</a>.</li>
 </ul>
 
-<h2>7. Changes</h2>
-<p>When new features are added (e.g. online duels or in-app purchases), this policy will be updated and the date above will change.</p>
+<h2>9. Changes</h2>
+<p>When new features are added (e.g. account sign-in or in-app purchases), this policy will be updated and the date above will change.</p>
 
-<h2>8. Contact</h2>
+<h2>10. Contact</h2>
 <p>For questions or data requests: <a href="mailto:hbbyazilim@gmail.com">hbbyazilim@gmail.com</a> (HBB Code)</p>
 </section>
 </main>
