@@ -33,12 +33,12 @@
 
 <section id="tr" lang="tr">
 <h1>Araba Sarrafı – Gizlilik Politikası</h1>
-<p class="meta">Geliştirici: HBB Code · Paket adı / Bundle ID: com.hbbcode.arabasarrafi · Son güncelleme: 25 Ekim 2026</p>
+<p class="meta">Geliştirici: HBB Code · Paket adı / Bundle ID: com.hbbcode.arabasarrafi · Son güncelleme: 31 Ekim 2026</p>
 
-<p>Bu politika, Android ve iPhone için geliştirilen <strong>Araba Sarrafı</strong> oyununun (“Uygulama”) hangi verileri nasıl işlediğini açıklar. Uygulama bir hesap oluşturmanızı istemez; adınız, e-posta adresiniz, telefon numaranız, kesin konumunuz, rehberiniz, fotoğraflarınız veya mikrofonunuz gibi kişisel bilgilere erişmez. Oyunda sohbet, kullanıcı adı veya oyuncuların birbirine mesaj göndermesi yoktur.</p>
+<p>Bu politika, Android ve iPhone için geliştirilen <strong>Araba Sarrafı</strong> oyununun (“Uygulama”) hangi verileri nasıl işlediğini açıklar. Uygulamayı hesap açmadan (misafir olarak) oynayabilirsiniz; hesap açmak isteğe bağlıdır (Google veya Apple ile giriş, bkz. 3. bölüm). Uygulama telefon numaranıza, kesin konumunuza, rehberinize, fotoğraflarınıza veya mikrofonunuza erişmez. Oyunda sohbet veya oyuncuların birbirine mesaj göndermesi yoktur; kayıtlı oyuncular yalnızca bir oyuncu adı seçebilir (bkz. 4. bölüm).</p>
 
 <h2>1. Yalnızca cihazınızda tutulan veriler</h2>
-<p>Oyundaki <strong>puanınız, krediniz ve reklam ödülü sayacınız</strong> yalnızca telefonunuzda saklanır; bize veya başka bir sunucuya gönderilmez. Uygulamayı kaldırdığınızda veya uygulama verilerini temizlediğinizde silinir.</p>
+<p>Misafir olarak oynarken <strong>puanınız, krediniz ve reklam ödülü sayacınız</strong> yalnızca telefonunuzda saklanır; bize veya başka bir sunucuya gönderilmez. Uygulamayı kaldırdığınızda veya uygulama verilerini temizlediğinizde silinir. Hesap açarsanız puanınız ve krediniz ayrıca yedeklenir (3. bölüm).</p>
 
 <h2>2. Online düello (Google Firebase)</h2>
 <p>Düello modunu açtığınızda, Uygulama Google Firebase üzerinden size rastgele bir <strong>misafir kimliği</strong> (anonim kullanıcı kimliği) oluşturur. Bu kimlik adınıza, e-postanıza veya telefon numaranıza bağlı değildir; yalnızca maçta hangi cevabın hangi oyuncuya ait olduğunu ayırt etmek için kullanılır. Düello sırasında Firebase Realtime Database’de (sunucu konumu: Belçika) şunlar tutulur:</p>
@@ -51,14 +51,27 @@
 <p>Maç bittiğinde oda kısa süre içinde silinir; eşleşme sırasındaki kaydınız rakip bulununca veya aramayı bıraktığınızda silinir. Firebase, hizmeti sunmak için IP adresinizi ve cihaz bilgilerinizi işleyebilir. Ayrıntılar: <a href="https://firebase.google.com/support/privacy">Firebase gizlilik ve güvenlik</a>.</p>
 <p>Düelloya arkadaşınızı davet ettiğinizde paylaşım mesajını siz seçtiğiniz uygulamayla (ör. WhatsApp) gönderirsiniz; mesajda yalnızca oda kodu ve mağaza bağlantıları bulunur.</p>
 
-<h2>3. Araba fotoğrafları ve araba listesi</h2>
+<h2>3. İsteğe bağlı hesap (Google veya Apple ile giriş)</h2>
+<p>İlerlemenizi yedeklemek ve arkadaş eklemek için Google veya Apple hesabınızla giriş yapabilirsiniz. Giriş Google Firebase Authentication üzerinden yapılır ve şunlar işlenir:</p>
+<ul>
+  <li>Firebase kullanıcı kimliğiniz ve giriş sağlayıcısının verdiği <strong>e-posta adresiniz</strong> (Apple’da “E-postamı gizle”yi seçerseniz Apple’ın verdiği gizli adres). E-posta adresiniz yalnızca hesabınızı tanımak için kullanılır; diğer oyunculara gösterilmez, size pazarlama e-postası gönderilmez.</li>
+  <li><strong>İlerleme yedeği:</strong> puanınız, krediniz ve son güncelleme zamanı (Firebase Realtime Database, Belçika). Başka telefonda aynı hesapla girdiğinizde ilerlemeniz geri gelir.</li>
+</ul>
+<p>Google veya Apple hesabınızdaki adınız ve profil fotoğrafınız Uygulama tarafından kaydedilmez ve kimseyle paylaşılmaz.</p>
+
+<h2>4. Oyuncu adı, arkadaşlar, engelleme ve şikâyet</h2>
+<p>Hesap açan oyunculara oyun tarafından otomatik bir takma ad (ör. “Turbo Şahin 42”) ve 6 karakterli bir <strong>arkadaş kodu</strong> verilir. İsterseniz kendi <strong>oyuncu adınızı</strong> seçebilirsiniz (3-16 karakter); gerçek adınızı yazmak zorunda değilsiniz. Küfürlü, hakaret içeren veya başkasını taklit eden adlar kabul edilmez ve Uygulama tarafından süzülür.</p>
+<p>Firebase Realtime Database’de (Belçika) şunlar tutulur: oyuncu adınız veya takma adınız, arkadaş kodunuz, arkadaş listeniz, gönderdiğiniz ve aldığınız arkadaşlık istekleri, arkadaşlarınıza gönderdiğiniz düello davetleri (2 dakika geçerli) ve engellediğiniz oyuncular. Oyuncu adınızı yalnızca arkadaşlarınız ve size arkadaşlık isteği gönderdiğiniz ya da sizden istek alan oyuncular görür.</p>
+<p>Bir oyuncuyu <strong>engelleyebilirsiniz</strong>; engellediğiniz oyuncu size arkadaşlık isteği veya düello daveti gönderemez. Uygunsuz bir adı <strong>şikâyet edebilirsiniz</strong>: şikâyet kaydında şikâyet edilen oyuncunun kimliği ve o andaki adı, şikâyet edenin kimliği ve zaman bulunur. Şikâyetleri yalnızca geliştirici görür; incelenen şikâyetler silinir, uygunsuz bulunan ad kaldırılır ve oyuncu otomatik takma adına döner. Ağır veya tekrarlanan ihlallerde hesap devre dışı bırakılabilir.</p>
+
+<h2>5. Araba fotoğrafları ve araba listesi</h2>
 <p>Bazı araba fotoğrafları uygulamanın içinde gelir; diğerleri ve güncel araba listesi internetten (Cloudflare sunucularından) indirilip telefonunuzda saklanır. Bu indirme sırasında, her internet isteğinde olduğu gibi IP adresiniz ve cihaz bilgileriniz sunucu tarafından teknik olarak işlenebilir; bu bilgileri sizi tanımak veya reklam için kullanmayız.</p>
 <p>Fotoğraflar ticari kullanıma izin veren lisanslarla (Pexels lisansı; Wikimedia Commons’ta CC0, kamu malı, CC BY ve CC BY-SA) kullanılır. Fotoğrafçının adı ve lisans her görselin köşesinde, tam kaynak listesi uygulamadaki <em>Fotoğraf kaynakları</em> sayfasında yer alır.</p>
 
-<h2>4. Bildirimler</h2>
+<h2>6. Bildirimler</h2>
 <p>Reklam ödülü merdiveni yenilendiğinde size hatırlatma göstermek için, izin verirseniz telefonunuzda <strong>yerel bildirim</strong> kurulur. Bu bildirim tamamen telefonunuzda oluşturulur; bunun için hiçbir veri gönderilmez. İzni telefon ayarlarından dilediğiniz zaman kapatabilirsiniz.</p>
 
-<h2>5. Reklamlar (Google AdMob)</h2>
+<h2>7. Reklamlar (Google AdMob)</h2>
 <p>Uygulama, kredisi azalan oyunculara isteğe bağlı <strong>ödüllü reklam</strong> göstermek için Google AdMob’u kullanır. Reklam yalnızca siz “Reklam izle”ye bastığınızda gösterilir. Reklam gösterebilmek için Google, cihazınızdan şu bilgileri toplayabilir:</p>
 <ul>
   <li>Reklam kimliği (Android Advertising ID veya iPhone’da IDFA)</li>
@@ -69,15 +82,16 @@
 <p>Bu veriler Google tarafından reklam gösterimi, ölçüm, sahtecilik önleme ve analiz amacıyla işlenir; aktarım sırasında şifrelenir. Ayrıntılar: <a href="https://policies.google.com/technologies/partner-sites?hl=tr">Google’ın iş ortaklarının sitelerini veya uygulamalarını kullandığınızda verilerinizi nasıl kullandığı</a> ve <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>.</p>
 <p>iPhone’da reklam kimliği yalnızca Apple’ın “Uygulama İzleme Şeffaflığı” penceresinde izin verirseniz kullanılır. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre’deki kullanıcılardan kişiselleştirilmiş reklam için Google’ın onay formu aracılığıyla izin istenir. Reklam kimliğinizi dilediğiniz zaman telefonunuzun gizlilik ayarlarından sıfırlayabilir veya silebilirsiniz.</p>
 
-<h2>6. Veri satışı ve paylaşımı</h2>
+<h2>8. Veri satışı ve paylaşımı</h2>
 <p>Verilerinizi satmayız. Yukarıda anlatılan hizmet sağlayıcılar (Google AdMob, Google Firebase, Cloudflare) dışında hiçbir üçüncü tarafla veri paylaşmayız.</p>
 
-<h2>7. Çocuklar</h2>
+<h2>9. Çocuklar</h2>
 <p>Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve bu yaştaki çocuklardan bilerek veri toplamaz.</p>
 
-<h2 id="veri-silme">8. Verilerinizin silinmesi (Araba Sarrafı – HBB Code)</h2>
-<p>Araba Sarrafı’nda hesap yoktur; verilerinizi aşağıdaki adımlarla siz silebilirsiniz:</p>
+<h2 id="veri-silme">10. Verilerinizin silinmesi (Araba Sarrafı – HBB Code)</h2>
+<p>Verilerinizi aşağıdaki adımlarla siz silebilirsiniz:</p>
 <ol>
+  <li><strong>Hesap (Google veya Apple ile giriş yaptıysanız):</strong> Uygulamada sol menü (☰) → <em>Hesap</em> → <em>Hesabımı sil</em>. Hesabınız, e-posta adresiniz, buluttaki puan/kredi yedeğiniz, oyuncu adınız, arkadaş kodunuz, arkadaş listeniz, istekleriniz, davetleriniz ve engelleme listeniz <strong>hemen ve kalıcı olarak</strong> silinir. Apple ile giriş yaptıysanız Apple’ın Uygulamaya verdiği yetki de geri alınır. Uygulamaya erişemiyorsanız hesabınızın e-posta adresinden <a href="mailto:hbbyazilim@gmail.com">hbbyazilim@gmail.com</a> adresine yazın; hesabınız 30 gün içinde silinir. Gönderdiğiniz şikâyet kayıtları incelendikten sonra silinir.</li>
   <li><strong>Puan, kredi ve ayarlar:</strong> Telefonunuzda Ayarlar → Uygulamalar → Araba Sarrafı → Depolama → <em>Verileri temizle</em>’ye dokunun ya da uygulamayı kaldırın. Bu veriler yalnızca telefonunuzda olduğu için anında ve tamamen silinir.</li>
   <li><strong>Düello verileri</strong> (oda kodu, sorular, cevaplarınız ve süreleri, eşleşme sırası kaydı): Maç bittikten sonra en geç birkaç dakika içinde, aramayı bıraktığınızda ya da rakip bulunduğunda sunucudan <strong>otomatik</strong> silinir; ayrıca bir şey yapmanız gerekmez. Uygulama maç sırasında beklenmedik biçimde kapanırsa geride kalan oda kaydı en geç 30 gün içinde silinir.</li>
   <li><strong>Misafir kimliği</strong> (Firebase’in rastgele ürettiği anonim kimlik): Uygulamayı kaldırdığınızda veya verilerini temizlediğinizde telefonunuzla bağlantısı silinir; yeni kurulumda yeni bir kimlik oluşur. Bu kimlik adınız, e-postanız veya telefon numaranızla ilişkili olmadığından sunucuda kalan kayıt hiç kimseyle eşleştirilemez.</li>
@@ -85,10 +99,10 @@
 </ol>
 <p>Sorularınız ve diğer veri talepleriniz için <a href="mailto:hbbyazilim@gmail.com">hbbyazilim@gmail.com</a> adresine yazabilirsiniz; talepler en geç 30 gün içinde yanıtlanır.</p>
 
-<h2>9. Değişiklikler</h2>
-<p>Uygulamaya yeni özellikler eklendiğinde (ör. hesapla giriş veya uygulama içi satın alma) bu politika güncellenir ve güncelleme tarihi yukarıda belirtilir.</p>
+<h2>11. Değişiklikler</h2>
+<p>Uygulamaya yeni özellikler eklendiğinde (ör. uygulama içi satın alma) bu politika güncellenir ve güncelleme tarihi yukarıda belirtilir.</p>
 
-<h2>10. İletişim</h2>
+<h2>12. İletişim</h2>
 <p>Sorularınız ve veri talepleriniz için: <a href="mailto:hbbyazilim@gmail.com">hbbyazilim@gmail.com</a> (HBB Code)</p>
 </section>
 
@@ -96,12 +110,12 @@
 
 <section id="en" lang="en">
 <h1>Araba Sarrafı – Privacy Policy</h1>
-<p class="meta">Developer: HBB Code · Package / Bundle ID: com.hbbcode.arabasarrafi · Last updated: October 25, 2026</p>
+<p class="meta">Developer: HBB Code · Package / Bundle ID: com.hbbcode.arabasarrafi · Last updated: October 31, 2026</p>
 
-<p>This policy explains how the Android and iPhone game <strong>Araba Sarrafı</strong> (“the App”) handles data. The App does not require an account and does not access personal information such as your name, email, phone number, precise location, contacts, photos or microphone. There is no chat, no usernames and no messaging between players.</p>
+<p>This policy explains how the Android and iPhone game <strong>Araba Sarrafı</strong> (“the App”) handles data. You can play without an account (as a guest); creating an account is optional (sign in with Google or Apple, see section 3). The App does not access your phone number, precise location, contacts, photos or microphone. There is no chat or messaging between players; registered players can only choose a player name (see section 4).</p>
 
 <h2>1. Data stored only on your device</h2>
-<p>Your <strong>score, credits and ad reward counter</strong> are stored only on your phone. They are never sent to us or any server, and they are deleted when you uninstall the App or clear its data.</p>
+<p>When playing as a guest, your <strong>score, credits and ad reward counter</strong> are stored only on your phone. They are never sent to us or any server, and they are deleted when you uninstall the App or clear its data. If you create an account, your score and credits are also backed up (section 3).</p>
 
 <h2>2. Online duels (Google Firebase)</h2>
 <p>When you open the duel mode, the App creates a random <strong>guest ID</strong> (anonymous user ID) through Google Firebase. It is not linked to your name, email or phone number; it is only used to tell which answer belongs to which player in a match. During a duel, Firebase Realtime Database (server location: Belgium) stores:</p>
@@ -114,14 +128,27 @@
 <p>The room is deleted shortly after the match ends; your queue entry is deleted when an opponent is found or you stop searching. Firebase may process your IP address and device information to provide the service. See <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>.</p>
 <p>When you invite a friend, you send the invitation yourself with an app of your choice (e.g. WhatsApp); it only contains the room code and store links.</p>
 
-<h2>3. Car photos and car list</h2>
+<h2>3. Optional account (sign in with Google or Apple)</h2>
+<p>You can sign in with your Google or Apple account to back up your progress and add friends. Sign-in uses Google Firebase Authentication and processes:</p>
+<ul>
+  <li>Your Firebase user ID and the <strong>email address</strong> provided by the sign-in provider (with Apple’s “Hide My Email”, the relay address Apple provides). Your email is only used to identify your account; it is never shown to other players and we do not send you marketing email.</li>
+  <li><strong>Progress backup:</strong> your score, credits and last update time (Firebase Realtime Database, Belgium). Signing in with the same account on another phone restores your progress.</li>
+</ul>
+<p>The name and profile photo of your Google or Apple account are not stored by the App and are not shared with anyone.</p>
+
+<h2>4. Player name, friends, blocking and reporting</h2>
+<p>Registered players get an automatic nickname (e.g. “Turbo Şahin 42”) and a 6-character <strong>friend code</strong>. You may choose your own <strong>player name</strong> (3-16 characters); you do not have to use your real name. Profane, insulting or impersonating names are not allowed and are filtered by the App.</p>
+<p>Firebase Realtime Database (Belgium) stores: your player name or nickname, friend code, friend list, friend requests sent and received, duel invitations sent to friends (valid for 2 minutes) and the players you blocked. Your player name is only visible to your friends and to players you have exchanged friend requests with.</p>
+<p>You can <strong>block</strong> a player; a blocked player cannot send you friend requests or duel invitations. You can <strong>report</strong> an inappropriate name: a report contains the reported player’s ID and name at that time, the reporter’s ID and the time. Reports are visible only to the developer; reviewed reports are deleted, inappropriate names are removed and the player reverts to the automatic nickname. Severe or repeated violations may lead to the account being disabled.</p>
+
+<h2>5. Car photos and car list</h2>
 <p>Some car photos are bundled with the App; others and the current car list are downloaded from Cloudflare servers and stored on your phone. As with any internet request, your IP address and device information may be technically processed by the server; we do not use them to identify you or for advertising.</p>
 <p>Photos are used under licenses that permit commercial use (Pexels license; CC0, public domain, CC BY and CC BY-SA on Wikimedia Commons). The photographer and license are shown in the corner of each image, and the full source list is on the in-app <em>Photo credits</em> page.</p>
 
-<h2>4. Notifications</h2>
+<h2>6. Notifications</h2>
 <p>If you allow it, the App schedules a <strong>local notification</strong> on your phone to remind you when the ad reward ladder resets. It is created entirely on your phone; no data is sent for it. You can turn it off in your phone settings at any time.</p>
 
-<h2>5. Advertising (Google AdMob)</h2>
+<h2>7. Advertising (Google AdMob)</h2>
 <p>The App uses Google AdMob to show optional <strong>rewarded ads</strong>, only when you tap “Watch ad”. To serve ads, Google may collect:</p>
 <ul>
   <li>Advertising ID (Android Advertising ID or IDFA on iPhone)</li>
@@ -132,15 +159,16 @@
 <p>Google processes this data for ad delivery, measurement, fraud prevention and analytics; it is encrypted in transit. See <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 <p>On iPhone, the advertising ID is used only if you allow it in Apple’s App Tracking Transparency prompt. Users in the EEA, UK and Switzerland are asked for consent to personalized ads through Google’s consent form. You can reset or delete your advertising ID at any time in your phone’s privacy settings.</p>
 
-<h2>6. Selling and sharing</h2>
+<h2>8. Selling and sharing</h2>
 <p>We do not sell your data. We do not share data with any third party other than the service providers described above (Google AdMob, Google Firebase, Cloudflare).</p>
 
-<h2>7. Children</h2>
+<h2>9. Children</h2>
 <p>The App is not directed at children under 13 and does not knowingly collect data from them.</p>
 
-<h2 id="data-deletion">8. Deleting your data (Araba Sarrafı – HBB Code)</h2>
-<p>Araba Sarrafı has no accounts; you can delete your data yourself as follows:</p>
+<h2 id="data-deletion">10. Deleting your data (Araba Sarrafı – HBB Code)</h2>
+<p>You can delete your data yourself as follows:</p>
 <ol>
+  <li><strong>Account (if you signed in with Google or Apple):</strong> in the App open the side menu (☰) → <em>Account</em> → <em>Delete my account</em>. Your account, email address, cloud score/credit backup, player name, friend code, friend list, requests, invitations and block list are deleted <strong>immediately and permanently</strong>. If you signed in with Apple, the authorization granted to the App is also revoked. If you cannot access the App, email <a href="mailto:hbbyazilim@gmail.com">hbbyazilim@gmail.com</a> from your account’s email address; your account will be deleted within 30 days. Reports you submitted are deleted after review.</li>
   <li><strong>Score, credits and settings:</strong> on your phone go to Settings → Apps → Araba Sarrafı → Storage → <em>Clear data</em>, or uninstall the App. This data exists only on your phone, so it is deleted immediately and completely.</li>
   <li><strong>Duel data</strong> (room code, questions, your answers and answer times, queue entry): deleted from the server <strong>automatically</strong> within a few minutes after the match ends, when you stop searching or when an opponent is found. Nothing else is needed. If the App closes unexpectedly during a match, any leftover room record is deleted within 30 days.</li>
   <li><strong>Guest ID</strong> (a random anonymous ID created by Firebase): uninstalling the App or clearing its data removes its link to your phone; a new ID is created after reinstalling. Because this ID is not associated with your name, email or phone number, any remaining server record cannot be linked to anyone.</li>
@@ -148,10 +176,10 @@
 </ol>
 <p>For questions and other data requests, email <a href="mailto:hbbyazilim@gmail.com">hbbyazilim@gmail.com</a>; requests are answered within 30 days.</p>
 
-<h2>9. Changes</h2>
-<p>When new features are added (e.g. account sign-in or in-app purchases), this policy will be updated and the date above will change.</p>
+<h2>11. Changes</h2>
+<p>When new features are added (e.g. in-app purchases), this policy will be updated and the date above will change.</p>
 
-<h2>10. Contact</h2>
+<h2>12. Contact</h2>
 <p>For questions or data requests: <a href="mailto:hbbyazilim@gmail.com">hbbyazilim@gmail.com</a> (HBB Code)</p>
 </section>
 </main>
